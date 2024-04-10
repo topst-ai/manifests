@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-    <default revision="topst_d3_pre" sync-j="4"/>
+	<default revision="refs/tags/work" sync-j="4"/>
 
-    <remote name="yoctoproject" fetch="https://git.yoctoproject.org"/>
-	<remote name="openembedded" fetch="https://github.com/openembedded"/>
+	<remote name="yoctoproject" fetch="https://git.yoctoproject.org"/>
+	<remote name="qt5" fetch="https://github.com/meta-qt5"/>
 	<remote name="topst" fetch="https://github.com/topst-ai"/>
 
-    <project remote="yoctoproject" name="poky" path="yocto/poky" revision="refs/tags/yocto-3.1.32" upstream="dunfell"/>
-	<project remote="yoctoproject" name="meta-arm" path="yocto/meta-arm" revision="refs/tags/yocto-3.1.6" upstream="dunfell"/>
-	<project remote="yoctoproject" name="meta-gplv2" path="yocto/meta-gplv2" revision="refs/tags/yocto-3.1.32" upstream="dunfell"/>
+	<!--<project remote="yoctoproject" name="poky" path="yocto/poky" revision="refs/tags/yocto-3.1.32" upstream="dunfell"/>-->
+	<!--<project remote="yoctoproject" name="meta-arm" path="yocto/meta-arm" revision="refs/tags/yocto-3.1.6" upstream="dunfell"/>-->
+	<!--<project remote="yoctoproject" name="meta-gplv2" path="yocto/meta-gplv2" revision="refs/tags/yocto-3.1.32" upstream="dunfell"/>-->
 
-	<project remote="openembedded" name="meta-qt5" path="yocto/meta-qt5" revision="5ef3a0ffd3324937252790266e2b2e64d33ef34f" upstream="dunfell"/>
+	<!--<project remote="qt5" name="meta-qt5" path="yocto/meta-qt5" revision="5ef3a0ffd3324937252790266e2b2e64d33ef34f" upstream="dunfell"/>-->
 
 	<project remote="topst" name="meta-telechips" path="yocto/meta-telechips" upstream="master"/>
 	<project remote="topst" name="meta-telechips-bsp" path="yocto/meta-telechips-bsp" upstream="master"/>
+
+	<project remote="topst" name="poky" path="yocto/poky" upstream="master"/>
+	<project remote="topst" name="meta-arm" path="yocto/meta-arm" upstream="master"/>
+	<project remote="topst" name="meta-gplv2" path="yocto/meta-gplv2" upstream="master"/>
+	<project remote="topst" name="meta-qt5" path="yocto/meta-qt5" upstream="master"/>
 
 </manifest>
